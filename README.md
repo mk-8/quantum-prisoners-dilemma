@@ -47,29 +47,6 @@ For any questions or contributions, feel free to reach out!
 
 ---
 
-# Quantum Prisoners' Dilemma
-
-## Introduction
-The introduction of quantum strategies in the Prisoner’s Dilemma can eliminate the dilemma while ensuring an optimal reward against any classical strategy.
-
-In the quantum version of the game, classical strategies—cooperate (|C⟩) and defect (|D⟩)—are represented as quantum states. The overall game state is expressed as a vector in a Hilbert space with bases |CC⟩, |CD⟩, |DC⟩, and |DD⟩, where the first letter in each pair corresponds to Alice's move.
-
-To incorporate entanglement between Alice and Bob’s moves, the game begins with a unitary transformation, Ĵ, applied to the initial state |CC⟩.
-
-Alice and Bob then choose their strategies, represented as 2x2 unitary operators ÛA and ÛB, respectively. The final state of the game is obtained by applying these operators, followed by an inverse unitary transformation Ĵ† and measurement:
-
-|Ѱf⟩ = Ĵ† (ÛA ⊗ ÛB) Ĵ |CC⟩.
-
-Due to the probabilistic nature of quantum mechanics, the expected payoff is calculated as:
-
-A = rPCC + pPDD + tPDC + sPCD
-
-where r, p, t, and s come from the standard payoff matrix, and the P terms represent the measured probabilities of each outcome.
-
-Quantum strategies are simulated using a two-parameter family of unitary matrices. The game is executed for various parameter settings to analyze Alice’s payoff distribution in terms of 𝜙 and 𝜃.
-
----
-
 ## Interactive Quantum Prisoners' Dilemma Game
 ### Built with Qiskit and Tkinter
 This project provides an interactive interface for simulating the Quantum Prisoners' Dilemma.
